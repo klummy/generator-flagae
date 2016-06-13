@@ -11,10 +11,10 @@ module.exports = yeoman.Base.extend({
     ));
 
     var prompts = [{
-      type: 'confirm',
-      name: 'someAnswer',
-      message: 'Would you like to enable this option?',
-      default: true
+      type: 'input',
+      name: 'name',
+      message: 'What is your project name?',
+      default: 'my-app'
     }];
 
     return this.prompt(prompts).then(function (props) {
@@ -25,12 +25,12 @@ module.exports = yeoman.Base.extend({
 
   writing: function () {
     this.fs.copy(
-      this.templatePath('dummyfile.txt'),
-      this.destinationPath('dummyfile.txt')
+      this.templatePath('app'),
+      this.destinationPath(this.props.name)
     );
   },
 
   install: function () {
-    this.installDependencies();
+    // this.installDependencies();
   }
 });

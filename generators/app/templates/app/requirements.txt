@@ -1,0 +1,4 @@
+Flask==0.10.1
+identity-toolkit-python-client>=0.1.6
+flask-restful
+Flask-Login
