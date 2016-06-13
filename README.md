@@ -1,6 +1,8 @@
 # generator-flask-gae-api [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url] [![Coverage percentage][coveralls-image]][coveralls-url]
 > This generates an API focused Flask app that is proconfigured for Google AppEngine
 
+_This is currently very basic and would be improved overtime_
+
 ## Installation
 
 First, install [Yeoman](http://yeoman.io) and generator-flask-gae-api using [npm](https://www.npmjs.com/) (we assume you have pre-installed [node.js](https://nodejs.org/)).
@@ -16,12 +18,8 @@ Then generate your new project:
 yo flask-gae-api
 ```
 
-## Getting To Know Yeoman
-
- * Yeoman has a heart of gold.
- * Yeoman is a person with feelings and opinions, but is very easy to work with.
- * Yeoman can be too opinionated at times but is easily convinced not to be.
- * Feel free to [learn more about Yeoman](http://yeoman.io/).
+## Credit
+The base of the application was scaffolded based on the [appengine-flask-skeleton](https://github.com/GoogleCloudPlatform/appengine-flask-skeleton). The frontend boilerplate is based on [this gulp-frontend-template](https://github.com/dmnsgn/gulp-frontend-boilerplate)
 
 ## License
 
