@@ -18,6 +18,17 @@ Then generate your new project:
 yo flask-gae-api
 ```
 
+## Options
+- Appname - [Done] Remember to underscorify it to avoid Python errors
+- Pip install - Prompt [Done]
+- AppEngine ID - Input
+- Include MkDocs documentation - Confirm
+- Include example api code - Confirm
+- Include authentication - Confirm
+- Include base classes - Confirm
+- Choose base frontend library/framework - React, AngularJS, Plain HTML
+
+
 ## Credit
 The base of the application was scaffolded based on the [appengine-flask-skeleton](https://github.com/GoogleCloudPlatform/appengine-flask-skeleton). The frontend boilerplate is based on [this gulp-frontend-template](https://github.com/dmnsgn/gulp-frontend-boilerplate)
 
