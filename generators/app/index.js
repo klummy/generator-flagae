@@ -38,7 +38,8 @@ module.exports = yeoman.Base.extend({
     },{
       type: 'confirm',
       name: 'include_mkdocs',
-      message: 'Do you want to include MkDocs documentation?'
+      message: 'Do you want to include MkDocs documentation?',
+      default: false
     }];
 
     return this.prompt(prompts).then(function (props) {
