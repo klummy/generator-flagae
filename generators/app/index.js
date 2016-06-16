@@ -3,6 +3,7 @@ var yeoman = require('yeoman-generator');
 var chalk = require('chalk');
 var yosay = require('yosay');
 var path = require('path');
+var underscored = require("underscore.string");
 
 
 module.exports = yeoman.Base.extend({
@@ -26,11 +27,7 @@ module.exports = yeoman.Base.extend({
       type: 'list',
       name: 'frontend_library',
       message: 'Which frontend library do you want included?',
-      choices: [
-        'None',
-        'AngularJS',
-        'React'
-      ],
+      choices: [ 'None', 'AngularJS', 'React'],
       filter: function (val) {
         return val.toLowerCase();
       }
@@ -53,7 +50,7 @@ module.exports = yeoman.Base.extend({
   writing: function () {
 
     // Assign props values to variables to reduce bloat.
-    var appname = this.props.appname,
+    var appname = underscored(this.props.appname).trim().slugify().underscored().value(),
         frontend_library = this.props.frontend_library;
 
 
@@ -93,6 +90,7 @@ module.exports = yeoman.Base.extend({
 
     if(this.props.include_mkdocs) {
 
+
       // Copy mkdocs config file
       this.fs.copyTpl(
         this.templatePath('docs/mkdocs.yml'),
@@ -121,7 +119,7 @@ module.exports = yeoman.Base.extend({
         this.templatePath('partials/angularjs/templates'),
         this.destinationPath(appname+'/main/templates')
       );
-    } elif (frontend_library == 'react') {
+    } else if(frontend_library == 'react') {
       this.fs.copy(
         this.templatePath('partials/react/static'),
         this.destinationPath(appname+'/main/static')
@@ -145,8 +143,10 @@ module.exports = yeoman.Base.extend({
 
   install: function () {
 
+    var appname = underscored(this.props.appname).trim().slugify().underscored().value();
+
     if(this.props.install_pip) {
-      this.spawnCommand('pip', ['install', '-r', this.props.appname+'/requirements.txt', '-t', this.props.appname+'/lib/']);
+      this.spawnCommand('pip', ['install', '-r', appname+'/requirements.txt', '-t', appname+'/lib/']);
     }
   },
 });
