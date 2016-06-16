@@ -18,15 +18,20 @@ Then generate your new project:
 yo flask-gae-api
 ```
 
-## Options
-- Appname - [Done] Remember to underscorify it to avoid Python errors
-- Pip install - Prompt [Done]
-- AppEngine ID - Input [Done]
-- Include MkDocs documentation - Confirm [Done]
-- Choose base frontend library/framework - React, AngularJS, Plain HTML [Halfway] Include & configure boilerplates for each code.
-- Include example api code - Confirm
-- Include authentication - Confirm
-- Include base classes - Confirm
+## Features & Roadmap
+- Appname - [Implemented]
+  - Remember to underscorify appname to avoid Python errors [Implemented]
+- Pip install after generator runs [Implemented]
+- AppEngine ID [Implemented]
+- Include MkDocs documentation [Implemented]
+- Include example api code [Implemented]
+- Choose base frontend library/framework - React, AngularJS, Plain HTML [In Progress]
+  - Include & configure boilerplates for each option.
+   - React
+   - AngularJS
+   - Plain
+- Include extensible base classes that assist in building APIs faster
+- Include authentication
 
 
 ## Credit
