@@ -1,8 +1,8 @@
 {
-  "name": "generator-flask-gae-api",
+  "name": "generator-flagae",
   "version": "0.0.0",
   "description": "This generates an API focused Flask app that is proconfigured for Google AppEngine",
-  "homepage": "https://github.com/klummy/generator-flask-gae-api",
+  "homepage": "https://github.com/klummy/generator-flagae",
   "author": {
     "name": "Yekeen Ajeigbe",
     "email": "aayekeen@gmail.com",
@@ -44,7 +44,7 @@
       "mocha": true
     }
   },
-  "repository": "klummy/generator-flask-gae-api",
+  "repository": "klummy/generator-flagae",
   "scripts": {
     "prepublish": "gulp prepublish",
     "test": "gulp"
