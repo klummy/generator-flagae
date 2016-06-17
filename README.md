@@ -13,9 +13,8 @@ npm install -g generator-flagae
 ```
 
 Then generate your new project:
-
 ```bash
-yo flask-gae-api
+yo flagae
 ```
 
 ## Features & Roadmap
