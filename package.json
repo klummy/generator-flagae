@@ -1,6 +1,6 @@
 {
   "name": "generator-flagae",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "This generates an API focused Flask app that is proconfigured for Google AppEngine",
   "homepage": "https://github.com/klummy/generator-flagae",
   "author": {
