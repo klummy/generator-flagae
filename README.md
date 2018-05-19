@@ -1,4 +1,6 @@
 # generator-flagae [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url] [![Coverage percentage][coveralls-image]][coveralls-url]
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/klummy/generator-flagae.svg)](https://greenkeeper.io/)
 > This generates an API focused Flask app that is proconfigured for Google AppEngine
 
 _This is currently very basic and would be improved overtime_
